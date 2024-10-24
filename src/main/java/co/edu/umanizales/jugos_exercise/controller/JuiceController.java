@@ -23,13 +23,13 @@ public class JuiceController {
         juices.add(new Juice("Mango Smoothie", List.of("Mango"), true, true));
     }
 
-    // Obtener listado completo de jugos
+    
     @GetMapping
     public List<Juice> getAllJuices() {
         return juices;
     }
 
-    // Obtener jugos por nombre de fruta
+    
     @GetMapping("/fruit/{fruit}")
     public List<Juice> getJuicesByFruit(@PathVariable String fruit) {
         return juices.stream()

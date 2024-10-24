@@ -8,7 +8,7 @@ public class Juice {
     private boolean withMilk;
     private boolean withSugar;
 
-    // Constructor
+    
     public Juice(String name, List<String> fruits, boolean withMilk, boolean withSugar) {
         this.name = name;
         this.fruits = fruits;
@@ -16,7 +16,7 @@ public class Juice {
         this.withSugar = withSugar;
     }
 
-    // Getters y Setters
+
     public String getName() {
         return name;
     }
